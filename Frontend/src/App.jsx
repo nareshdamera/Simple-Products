@@ -14,6 +14,7 @@ import FetchCategory from './project/FetchCategory'
 import Product from './project/Product'
 import FetchCustomerc from './project/FetchCustomerc'
 import AddProduct from './project/AddProduct'
+import AddUser from './project/AddUser'
 
 
 function App() {
@@ -29,12 +30,7 @@ function App() {
           <Route path="/product" element={<Product/>}/>
           <Route path="/fetchproductsc" element={<FetchCustomerc/>}/>
           <Route path="/addproduct" element={<AddProduct/>}/>
-
-
-
-
-
-          
+          <Route path="/adduser" element={<AddUser/>}/>          
       </Routes>
       </BrowserRouter>
     </>
