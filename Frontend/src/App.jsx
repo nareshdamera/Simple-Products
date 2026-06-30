@@ -13,6 +13,7 @@ import FetchProducts from './project/FetchProducts'
 import FetchCategory from './project/FetchCategory'
 import Product from './project/Product'
 import FetchCustomerc from './project/FetchCustomerc'
+import AddProduct from './project/AddProduct'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/fetchbycategory" element={<FetchCategory/>}/>
           <Route path="/product" element={<Product/>}/>
           <Route path="/fetchproductsc" element={<FetchCustomerc/>}/>
+          <Route path="/addproduct" element={<AddProduct/>}/>
 
 
 
