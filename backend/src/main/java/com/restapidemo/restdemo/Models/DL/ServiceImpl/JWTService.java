@@ -14,10 +14,11 @@ import org.springframework.stereotype.Service;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
-
+import org.springframework.beans.factory.annotation.Value;
 @Service
 public class JWTService {
-	public static final String SECRET = "Thisissecretcode%$@#**&&GGHGdefsfsakasdwdfs";
+	@Value("${jwt.secret}")
+	private String SECRET;
 
 	private Key getSignedKey() {
 		return Keys.hmacShaKeyFor(SECRET.getBytes(StandardCharsets.UTF_8));
