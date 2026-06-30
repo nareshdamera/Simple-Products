@@ -26,6 +26,7 @@ const navigate = useNavigate();
                     <li><a href="/fetchallproducts">Show Products</a></li>
                     <li><a href="/fetchbycategory">Find Products by Category</a></li>
                     <li><a href="/fetchproductsc">Get Products C</a></li>
+                    <li><a href="/addproduct">Add Product</a></li>
                     {/* <li><a href="/insertcustomer">Add Employee</a></li>
                     <li><a href="/updatecustomer">Update Employee</a></li>
                     <li><a href="/deletecustomer">Delete Employee</a></li> */}
@@ -51,7 +52,6 @@ const navigate = useNavigate();
             </div>
         )}
         
- 
      
     </>
   );
