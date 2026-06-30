@@ -16,4 +16,7 @@ public class ProductBL {
 	public List<Product>getAll(){
 		return productService.getAll();
 	}
+	public String addProduct(Product product) {
+		return productService.addProduct(product);
+	}
 }
