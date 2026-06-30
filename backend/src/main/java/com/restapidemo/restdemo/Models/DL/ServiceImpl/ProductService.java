@@ -1,6 +1,7 @@
 package com.restapidemo.restdemo.Models.DL.ServiceImpl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,6 +26,19 @@ public class ProductService implements IProduct{
 		// TODO Auto-generated method stub
 		List<Product> list=productRepository.findAllByCategory(category);
 		return list;
+	}
+
+	@Override
+	public String addProduct(Product product) {
+		// TODO Auto-generated method stub
+		Product record=productRepository.findByProductId(product.getProductid());
+		if(record==null) {
+			productRepository.save(product);
+			return "Successfully added";
+		}else {
+			return "Product already exists";
+		}
+		
 	}
 
 }
